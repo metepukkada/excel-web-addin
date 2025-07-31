@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Office Add-in</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <link rel="stylesheet" href="Home.css" />
+</head>
+<body>
+    <div id="content-main" role="main">
+        <h1>API Çağrısı Yap</h1>
+
+        <label for="httpMethod">HTTP Metodu:</label>
+        <select id="httpMethod">
+            <option value="GET" selected>GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+        </select>
+
+        <label for="baseUrl">Temel URL (Path parametreleri için):</label>
+        <input type="text" id="baseUrl" placeholder="https://api.ornek.com/resource/{id}" />
+
+        <label for="pathParams">Path Parametreleri (JSON formatında):</label>
+        <textarea id="pathParams" placeholder='paramA/paramB/paramC' rows="2"></textarea>
+
+        <label for="queryParams">Query Parametreleri (JSON formatında):</label>
+        <textarea id="queryParams" placeholder='{"search":"excel","page":"1"}' rows="2"></textarea>
+
+        <label for="bodyContent">Body İçeriği (POST/PUT için JSON):</label>
+        <textarea id="bodyContent" placeholder='{"name":"John","age":30}' rows="4"></textarea>
+
+        <button id="callApiBtn">API'yi Çağır</button>
+
+    </div>
+    <script type="module" src="Home.js"></script>
+</body>
+</html>

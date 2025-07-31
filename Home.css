@@ -1,0 +1,82 @@
+﻿body {
+    background-color: #f3f2f1;
+    padding: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content-main {
+    max-width: 480px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #0078d4;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Label stilleri */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #323130;
+    font-size: 1rem;
+}
+
+/* Input ve Select stilleri */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #c8c6c4;
+    border-radius: 4px;
+    margin-bottom: 1.2rem;
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: vertical; /* textarea yeniden boyutlanabilir */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    input[type="text"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #0078d4;
+        box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.3);
+    }
+
+/* Button stili */
+button#callApiBtn {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.4rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+    button#callApiBtn:hover {
+        background-color: #005a9e;
+    }
+
+/* Responsive küçük ekranlar için */
+@media (max-width: 520px) {
+    #content-main {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
